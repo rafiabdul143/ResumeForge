@@ -1,0 +1,6 @@
+wwwroot\index.html
+wwwroot\js\app.js
+wwwroot\css\style.css
+C:\Users\v-abhinavmu\source\repos\ResumeBuilder\wwwroot\index.html
+C:\Users\v-abhinavmu\source\repos\ResumeBuilder\wwwroot\js\app.js
+C:\Users\v-abhinavmu\source\repos\ResumeBuilder\wwwroot\css\style.css

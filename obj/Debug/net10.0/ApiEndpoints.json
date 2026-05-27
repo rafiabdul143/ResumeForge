@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "ResumeBuilder.Controllers.AIController",
+    "Method": "GetProjectInfo",
+    "RelativePath": "api/ai/project-info",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ResumeBuilder.Controllers.ProjectInfoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

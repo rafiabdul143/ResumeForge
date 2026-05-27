@@ -1,0 +1,24 @@
+using ResumeBuilder;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
+// Register AIService with HttpClient (for DuckDuckGo search)
+builder.Services.AddHttpClient<AIService>();
+
+var app = builder.Build();
+
+app.UseCors("AllowAll");
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.UseRouting();
+app.MapControllers();
+app.MapFallbackToFile("index.html");
+
+app.Run();

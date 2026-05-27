@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|c:\\users\\v-abhinavmu\\source\\repos\\resumebuilder\\wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{27C0D2BA-2EB5-4BA5-8F6A-3D43C1A467AF}|ResumeBuilder.csproj|solutionrelative:wwwroot\\js\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\wwwroot\\js\\app.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\app.js",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\wwwroot\\js\\app.js",
+              "RelativeToolTip": "wwwroot\\js\\app.js",
+              "ViewState": "AgIAAFwCAAAAAAAAAAAYwGoCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-26T09:17:05.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T09:22:50.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T09:21:12.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AIService.cs",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\AIService.cs",
+              "RelativeDocumentMoniker": "AIService.cs",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\AIService.cs",
+              "RelativeToolTip": "AIService.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAwwBkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T09:17:44.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-26T09:17:24.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAOQBAAAAAAAAAAAqwOUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-26T09:16:30.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AIController.cs",
+              "DocumentMoniker": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\Controllers\\AIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AIController.cs",
+              "ToolTip": "C:\\Users\\v-abhinavmu\\source\\repos\\ResumeBuilder\\Controllers\\AIController.cs",
+              "RelativeToolTip": "Controllers\\AIController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwCAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T09:15:36.834Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
