@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YAi8y61Y4jQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\v-moharafi\\OneDrive - Microsoft\\Desktop\\work\\Resume_builder\\backend\\ResumeBuilder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\v-moharafi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "C:\\Users\\v-moharafi\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

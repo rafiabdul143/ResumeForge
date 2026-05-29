@@ -15,10 +15,7 @@ builder.Services.AddHttpClient<AIService>();
 var app = builder.Build();
 
 app.UseCors("AllowAll");
-app.UseDefaultFiles();
-app.UseStaticFiles();
 app.UseRouting();
 app.MapControllers();
-app.MapFallbackToFile("index.html");
 
 app.Run();
