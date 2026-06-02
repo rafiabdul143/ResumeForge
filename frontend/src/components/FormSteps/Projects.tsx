@@ -16,14 +16,14 @@ export const Projects: React.FC<ProjectsProps> = ({
   onChange,
 
 }) => {
-  {/*const handleAIFillClick = async (id: string, name: string) => {
+  /*const handleAIFillClick = async (id: string, name: string) => {
     if (!name.trim()) {
       alert('Please enter a project name first!');
       return;
     }
     await onAIFill(id, name);
-  };
-*/}
+  };*/
+
   return (
     <section className="form-step">
       <div className="step-header">
