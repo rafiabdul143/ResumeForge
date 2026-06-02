@@ -6,7 +6,7 @@ interface ProjectsProps {
   onAdd: () => void;
   onRemove: (id: string) => void;
   onChange: (id: string, field: keyof ProjectData, value: any) => void;
- // onAIFill: (id: string, projectName: string) => Promise<void>;
+ // onAIFill: (id: string, projectName: string) => Promise<void>; add this onAIFill in line 17 after onChange, and implement the function in the parent component (ResumeForm) to handle AI filling logic.
 }
 
 export const Projects: React.FC<ProjectsProps> = ({
@@ -14,7 +14,7 @@ export const Projects: React.FC<ProjectsProps> = ({
   onAdd,
   onRemove,
   onChange,
- // onAIFill,
+
 }) => {
   {/*const handleAIFillClick = async (id: string, name: string) => {
     if (!name.trim()) {
