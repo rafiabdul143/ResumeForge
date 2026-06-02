@@ -28,7 +28,7 @@ export const PersonalDetails: React.FC<PersonalDetailsProps> = ({
             <input
               type="text"
               id="fullName"
-              placeholder="e.g. Sreeteja Shirivolu"
+              placeholder="e.g. David Johnson"
               value={data.fullName}
               onChange={(e) => onChange('fullName', e.target.value)}
               required
@@ -41,7 +41,7 @@ export const PersonalDetails: React.FC<PersonalDetailsProps> = ({
             <input
               type="text"
               id="jobTitle"
-              placeholder="e.g. Power BI Engineer"
+              placeholder="e.g. DevOps Engineer"
               value={data.jobTitle}
               onChange={(e) => onChange('jobTitle', e.target.value)}
             />
