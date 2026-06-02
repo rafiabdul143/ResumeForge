@@ -6,7 +6,7 @@ interface ProjectsProps {
   onAdd: () => void;
   onRemove: (id: string) => void;
   onChange: (id: string, field: keyof ProjectData, value: any) => void;
-  onAIFill: (id: string, projectName: string) => Promise<void>;
+ // onAIFill: (id: string, projectName: string) => Promise<void>;
 }
 
 export const Projects: React.FC<ProjectsProps> = ({
