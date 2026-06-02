@@ -8,10 +8,21 @@ interface ResumePreviewProps {
 
 const cleanUrl = (url: string) => url.replace(/^https?:\/\//, '').replace(/^www\./, '');
 
-const filled = (value: string) => value.trim().length > 0;
+const filled = (value: string) => value ? value.trim().length > 0 : false;
 
 export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
-  const { personal, summary, experience, education, skills, projects, certifications } = data;
+  const { 
+    personal, 
+    summary, 
+    experience, 
+    education, 
+    skills, 
+    projects, 
+    certifications, 
+    achievements, 
+    customSections 
+  } = data;
+
   const contactParts = [
     personal.location,
     personal.phone,
@@ -23,7 +34,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
   return (
     <section className="form-step" id="step8">
       <div className="step-header">
-        <div className="step-tag">STEP 08</div>
+        <div className="step-tag">STEP 10</div>
         <h1 className="step-title">Preview & Download</h1>
         <p className="step-sub">Review the print-ready ATS resume, then download it as a PDF.</p>
       </div>
@@ -44,6 +55,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
         {personal.jobTitle && <div className="rv-job-title">{personal.jobTitle}</div>}
         {contactParts.length > 0 && <div className="rv-contact">{contactParts.join(' | ')}</div>}
 
+        {/* PROFESSIONAL SUMMARY */}
         {summary && (
           <>
             <div className="rv-section">Professional Summary</div>
@@ -51,6 +63,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
           </>
         )}
 
+        {/* WORK EXPERIENCE */}
         {experience.some((item) => filled(item.company) || filled(item.role)) && (
           <>
             <div className="rv-section">Work Experience</div>
@@ -81,6 +94,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
           </>
         )}
 
+        {/* EDUCATION */}
         {education.some((item) => filled(item.institution) || filled(item.degree)) && (
           <>
             <div className="rv-section">Education</div>
@@ -101,6 +115,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
           </>
         )}
 
+        {/* TECHNICAL SKILLS */}
         {skills.some((item) => filled(item.category) || filled(item.items)) && (
           <>
             <div className="rv-section">Skills</div>
@@ -112,6 +127,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
           </>
         )}
 
+        {/* PROJECTS */}
         {projects.some((item) => filled(item.name) || filled(item.description)) && (
           <>
             <div className="rv-section">Projects</div>
@@ -128,6 +144,7 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
           </>
         )}
 
+        {/* CERTIFICATIONS */}
         {certifications.some((item) => filled(item.name) || filled(item.issuer)) && (
           <>
             <div className="rv-section">Certifications</div>
@@ -138,6 +155,38 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
             ))}
           </>
         )}
+
+        {/* ACHIEVEMENTS */}
+        {achievements && achievements.some((item) => filled(item.title) || filled(item.description)) && (
+          <>
+            <div className="rv-section">Achievements</div>
+            {achievements.map((item) => (
+              <div className="rv-entry" key={item.id}>
+                <div className="rv-entry-header">
+                  <div className="rv-project-name">{item.title}</div>
+                  {item.date && <div className="rv-dates">{item.date}</div>}
+                </div>
+                {item.description && <div className="rv-project-desc">{item.description}</div>}
+              </div>
+            ))}
+          </>
+        )}
+
+        {/* CUSTOM SECTIONS */}
+        {customSections && customSections.some((section) => filled(section.title) || filled(section.content)) && (
+          <>
+            {customSections.map((section) => {
+              if (!filled(section.title) && !filled(section.content)) return null;
+              return (
+                <div key={section.id}>
+                  <div className="rv-section">{section.title || 'Additional Information'}</div>
+                  {section.content && <p className="rv-summary whitespace-pre-line">{section.content}</p>}
+                </div>
+              );
+            })}
+          </>
+        )}
+
       </article>
     </section>
   );
