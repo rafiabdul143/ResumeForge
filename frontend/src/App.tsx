@@ -78,7 +78,7 @@ export const App = () => {
 // AI Integration (temporarily disabled)
 // AI Integration (temporarily disabled)
 // Uncomment the implementation below when backend AI service is available.
-const handleAIFill = useCallback(
+/*const handleAIFill = useCallback(
   async (_id: string, _projectName: string) => {
     console.log('AI Fill is currently disabled');
   },
@@ -210,7 +210,7 @@ const handleAIFill = useCallback(
             onAdd={resume.addProject}
             onRemove={resume.removeProject}
             onChange={resume.updateProject}
-           onAIFill={handleAIFill}
+            
           />
         )}
 
