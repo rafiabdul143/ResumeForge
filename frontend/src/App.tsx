@@ -5,8 +5,7 @@ import {
   FileDown,
   Leaf,
   ExternalLink,
-  Sparkles,
-  Shield,
+ 
 } from 'lucide-react';
 
 import { StepNavigator } from './components/StepNavigator';
@@ -27,7 +26,6 @@ const TOTAL_STEPS = 10;
 
 export const App = () => {
   const [currentStep, setCurrentStep] = useState(1);
-  const [isAILoading, setIsAILoading] = useState(false);
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   const resume = useResumeData();
@@ -77,52 +75,62 @@ export const App = () => {
     goToStep(currentStep - 1);
   }, [currentStep, goToStep]);
 
-  const handleAIFill = useCallback(
-    async (id: string, projectName: string) => {
-      setIsAILoading(true);
+// AI Integration (temporarily disabled)
+// AI Integration (temporarily disabled)
+// Uncomment the implementation below when backend AI service is available.
+const handleAIFill = useCallback(
+  async (_id: string, _projectName: string) => {
+    console.log('AI Fill is currently disabled');
+  },
+  []
+);
 
-      try {
-        const response = await fetch('/api/ai/project-info', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            projectName,
-          }),
-        });
+/*
+const handleAIFill = useCallback(
+  async (id: string, projectName: string) => {
+    try {
+      const response = await fetch('/api/ai/project-info', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          projectName,
+        }),
+      });
 
-        if (!response.ok) {
-          throw new Error('AI request failed');
-        }
-
-        const data = await response.json();
-
-        resume.updateProject(
-          id,
-          'description',
-          data.description || ''
-        );
-
-        resume.updateProject(
-          id,
-          'techStack',
-          data.technologies || ''
-        );
-
-        resume.updateProject(id, 'aiFilled', true);
-      } catch (error) {
-        console.error('AI Fill failed:', error);
-
-        window.alert(
-          'AI Fill could not complete. Please make sure the backend is running on localhost:5258.'
-        );
-      } finally {
-        setIsAILoading(false);
+      if (!response.ok) {
+        throw new Error('AI request failed');
       }
-    },
-    [resume]
-  );
+
+      const data = await response.json();
+
+      resume.updateProject(
+        id,
+        'description',
+        data.description || ''
+      );
+
+      resume.updateProject(
+        id,
+        'techStack',
+        data.technologies || ''
+      );
+
+      resume.updateProject(id, 'aiFilled', true);
+    } catch (error) {
+      console.error('AI Fill failed:', error);
+
+      window.alert(
+        'AI Fill could not complete. Please make sure the backend is running.'
+      );
+    }
+  },
+  [resume]
+);
+*/
+
+
 
   return (
     <div className="app-shell min-h-screen flex flex-col">
@@ -202,7 +210,7 @@ export const App = () => {
             onAdd={resume.addProject}
             onRemove={resume.removeProject}
             onChange={resume.updateProject}
-            onAIFill={handleAIFill}
+           onAIFill={handleAIFill}
           />
         )}
 

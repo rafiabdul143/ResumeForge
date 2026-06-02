@@ -173,19 +173,37 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
         )}
 
         {/* CUSTOM SECTIONS */}
-        {customSections && customSections.some((section) => filled(section.title) || filled(section.content)) && (
-          <>
-            {customSections.map((section) => {
-              if (!filled(section.title) && !filled(section.content)) return null;
-              return (
-                <div key={section.id}>
-                  <div className="rv-section">{section.title || 'Additional Information'}</div>
-                  {section.content && <p className="rv-summary whitespace-pre-line">{section.content}</p>}
-                </div>
-              );
-            })}
-          </>
-        )}
+    {/* CUSTOM SECTIONS */}
+{customSections &&
+  customSections.some(
+    (section) =>
+      filled(section.sectionTitle) ||
+      filled(section.content)
+  ) && (
+    <>
+      {customSections.map((section) => {
+        if (
+          !filled(section.sectionTitle) &&
+          !filled(section.content)
+        )
+          return null;
+
+        return (
+          <div key={section.id}>
+            <div className="rv-section">
+              {section.sectionTitle || 'Additional Information'}
+            </div>
+
+            {section.content && (
+              <p className="rv-summary whitespace-pre-line">
+                {section.content}
+              </p>
+            )}
+          </div>
+        );
+      })}
+    </>
+)}
 
       </article>
     </section>

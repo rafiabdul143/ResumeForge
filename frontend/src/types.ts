@@ -6,6 +6,7 @@ export interface PersonalDetailsData {
   email: string;
   linkedin: string;
   github: string;
+  portfolio?: string; // Add this line (the '?' makes it optional)
 }
 
 export interface ExperienceData {
@@ -57,6 +58,11 @@ export interface AchievementData {
   date: string;
   description: string;
 }
+export interface CustomSectionData {
+  id: string;
+  sectionTitle: string;
+  content: string; 
+}
 
 export interface ResumeData {
   personal: PersonalDetailsData;
@@ -67,4 +73,5 @@ export interface ResumeData {
   projects: ProjectData[];
   certifications: CertificationData[];
   achievements: AchievementData[]; // Added achievements to the ResumeData structure
+  customSections: CustomSectionData[]; // Added custom sections to the ResumeData structure
 }
