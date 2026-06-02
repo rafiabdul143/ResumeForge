@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../wwwroot',
+   outDir: 'dist',
     emptyOutDir: true, // cleans the wwwroot folder before building
   },
   server: {
