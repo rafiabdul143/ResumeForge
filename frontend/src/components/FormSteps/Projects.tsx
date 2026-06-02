@@ -14,7 +14,7 @@ export const Projects: React.FC<ProjectsProps> = ({
   onAdd,
   onRemove,
   onChange,
-  onAIFill,
+ // onAIFill,
 }) => {
   {/*const handleAIFillClick = async (id: string, name: string) => {
     if (!name.trim()) {
