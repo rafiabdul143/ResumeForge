@@ -16,14 +16,14 @@ export const Projects: React.FC<ProjectsProps> = ({
   onChange,
   onAIFill,
 }) => {
-  const handleAIFillClick = async (id: string, name: string) => {
+  {/*const handleAIFillClick = async (id: string, name: string) => {
     if (!name.trim()) {
       alert('Please enter a project name first!');
       return;
     }
     await onAIFill(id, name);
   };
-
+*/}
   return (
     <section className="form-step">
       <div className="step-header">
@@ -60,13 +60,13 @@ export const Projects: React.FC<ProjectsProps> = ({
                       onChange={(e) => onChange(proj.id, 'name', e.target.value)}
                     />
                   </div>
-                  <button
+                  {/*<button
                     className="btn-ai-search"
                     type="button"
                     onClick={() => handleAIFillClick(proj.id, proj.name)}
                   >
                     ✦ AI Fill
-                  </button>
+                  </button>*/}
                 </div>
                 <p className="bullets-hint" style={{ marginTop: '6px' }}>
                   Don't know the details? Enter name and click <strong>AI Fill</strong>!
