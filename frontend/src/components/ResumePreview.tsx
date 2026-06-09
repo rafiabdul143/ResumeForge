@@ -40,10 +40,14 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
       </div>
 
       <div className="preview-actions">
-        <button className="btn-primary" type="button" onClick={() => window.print()}>
-          <FileDown aria-hidden="true" size={18} />
-          Download PDF
-        </button>
+        <button
+  className="btn-primary"
+  type="button"
+  onClick={() => window.print()}
+>
+  <FileDown aria-hidden="true" size={18} />
+  Download PDF
+</button>
         <button className="btn-outline" type="button" onClick={onEdit}>
           <Pencil aria-hidden="true" size={18} />
           Edit Resume
@@ -83,9 +87,11 @@ export const ResumePreview = ({ data, onEdit }: ResumePreviewProps) => {
                   </div>
                   {bullets.length > 0 && (
                     <ul className="rv-bullets">
-                      {bullets.map((bullet) => (
-                        <li key={bullet}>{bullet}</li>
-                      ))}
+                      {bullets.map((bullet, index) => (
+  <li key={`${item.id}-${index}`}>
+    {bullet}
+  </li>
+))}
                     </ul>
                   )}
                 </div>

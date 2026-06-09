@@ -776,44 +776,7 @@ input:focus, textarea:focus, select:focus {
     text-decoration: none;
 }
 
-/* PRINT MEDIA DIRECTIVES */
-@media print {
-    body {
-        background: #ffffff;
-        color: #000000;
-        padding: 0 !important;
-    }
 
-    .site-header,
-    .step-nav,
-    .nav-row,
-    .preview-actions,
-    .progress-rail {
-        display: none !important;
-    }
-
-    .form-step {
-        display: none !important;
-    }
-
-    #step8 {
-        display: block !important;
-    }
-
-    .resume-preview {
-        padding: 0 !important;
-        margin: 0 !important;
-        max-width: 100% !important;
-        box-shadow: none !important;
-        border: none !important;
-        border-radius: 0 !important;
-    }
-}
-
-@page {
-    size: auto;
-    margin: 18mm 16mm; /* Exact specification requested by user */
-}
 /* =========================================
    FOOTER
 ========================================= */
@@ -1001,5 +964,47 @@ input:focus, textarea:focus, select:focus {
         flex-direction: column;
         gap: 8px;
         text-align: center;
+    }
+}
+@media print {
+
+    body * {
+        visibility: hidden !important;
+    }
+
+    .resume-preview,
+    .resume-preview * {
+        visibility: visible !important;
+    }
+
+    .resume-preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        background: white;
+    }
+
+    .site-header,
+    .step-nav,
+    .progress-rail,
+    .step-header,
+    .preview-actions,
+    .nav-row,
+    .rf-footer,
+    .rf-footer-inner,
+    .rf-footer-bottom,
+    footer {
+        display: none !important;
+    }
+
+    @page {
+        margin: 12mm;
+        size: A4;
     }
 }
