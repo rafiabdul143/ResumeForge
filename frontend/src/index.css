@@ -512,6 +512,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 /* BOTTOM NAVIGATION */
+/* BOTTOM NAVIGATION */
 .nav-row {
     display: flex;
     justify-content: space-between;
@@ -519,39 +520,43 @@ input:focus, textarea:focus, select:focus {
     margin-top: 2.5rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border-green);
+    user-select: none; /* Prevents text highlighting on quick clicking */
+}
+
+/* Share structural base to keep things DRY and uniform */
+.btn-next,
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;  /* Fixed matching dimensions for pixel-perfect squares */
+    height: 48px;
+    border-radius: 12px; /* Slightly smoother modern radius */
+    font-size: 16px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-next {
     background: var(--primary);
     color: var(--white);
     border: none;
-    border-radius: 10px;
-    padding: 13px 28px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: var(--sans);
-    transition: all 0.2s;
     margin-left: auto;
 }
 
 .btn-next:hover {
     background: var(--primary-dark);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(46,125,50,0.2);
+    transform: translateY(-1.5px);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.25);
 }
 
 .btn-back {
     background: var(--bg-card);
     border: 1px solid var(--border-green);
     color: var(--text-primary);
-    border-radius: 10px;
-    padding: 13px 22px;
-    font-size: 15px;
-    cursor: pointer;
-    font-family: var(--sans);
-    transition: all 0.2s;
-    font-weight: 600;
     box-shadow: var(--shadow);
 }
 
@@ -559,8 +564,16 @@ input:focus, textarea:focus, select:focus {
     border-color: var(--primary);
     color: var(--primary-dark);
     background: var(--primary-pale);
+    transform: translateY(-1.5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* Tactile bounce effect when physically clicked */
+.btn-next:active,
+.btn-back:active {
+    transform: translateY(0.5px) scale(0.96);
+    transition-duration: 0.08s;
+}
 /* FULL-SCREEN AI OVERLAY */
 .ai-overlay {
     display: none;
@@ -1007,4 +1020,26 @@ input:focus, textarea:focus, select:focus {
         margin: 12mm;
         size: A4;
     }
+}
+@media (max-width: 768px) {
+
+  .site-header {
+    height: auto;
+    padding: 12px 16px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .header-badge {
+    width: 100%;
+    max-width: 280px;
+  }
 }
